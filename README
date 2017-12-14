@@ -1,0 +1,7 @@
+To get started, you can either use the provided Visual Studio .sln (VS2012), or the Makefile. The Makefile provides build capability for Cygwin, Linux, or OSX operating systems.
+
+The Makefile has been confirmed to work as-is in the Myth cluster.
+
+VS users: in the case that you experience an error in which <glut32.dll> cannot be found, it has been included with the starter files. You should copy this file to the Debug/ and Release/ folders generated at compile time.
+
+If you experience build problems, please make a post on Piazza or contact the staff list immediately so we can get you ready to go!

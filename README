@@ -1,7 +1,30 @@
-To get started, you can either use the provided Visual Studio .sln (VS2012), or the Makefile. The Makefile provides build capability for Cygwin, Linux, or OSX operating systems.
+Mrs. Potts:
+Audio Visualizer
 
-The Makefile has been confirmed to work as-is in the Myth cluster.
+Mrs. Potts is an audio visualizer that first takes in a audio file and then it processes into discrete data points. Then, 
+it visualizes the beat to be in pulsing action of the teapot, pitch to be the color shade, and volume to be the amount of 
+teapot that is getting colored. It uses OpenGl and Glsl Shader to update the beat, pitch, volume data from audio file, and
+the video is shown on OpenGl window. 
 
-VS users: in the case that you experience an error in which <glut32.dll> cannot be found, it has been included with the starter files. You should copy this file to the Debug/ and Release/ folders generated at compile time.
+Example video: https://drive.google.com/file/d/1H_jy7ymWK6KxxuHOclDs1BhHq_a79qG1/view?usp=sharing
 
-If you experience build problems, please make a post on Piazza or contact the staff list immediately so we can get you ready to go!
+MUSICAL TEAPOT <insert mrs potts meme>
+
+How to Run:
+	First, download the zipfile of the source code/git clone this repo. 
+  Then, make sure to locate the csv files generated from step 1, since the relative path is used as command line input for 
+  the run.
+
+Run details:
+  1. Unzip the zip file of source code.
+  2. Open terminal and navigate into the unzipped folder path.
+  3. Run ‘make’ in command line to build Mrs. Potts. 
+  4. Run desired command line input.
+
+Command Line Input Format: 
+  ./final_project <vertex shader> <fragment shader> <volume_file> <pitch_file> <beat_file>
+  Example: ./final_project kernels/bailey.vert kernels/bailey.frag data/volume.csv data/pitch.csv data/beat.csv
+
+
+contact point: ahhyunahn@gmail.com
+Last updated: Dec 2017

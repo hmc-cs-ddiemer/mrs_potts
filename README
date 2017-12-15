@@ -14,6 +14,19 @@ How to Run:
 	First, download the zipfile of the source code/git clone this repo. 
   Then, make sure to locate the csv files generated from step 1, since the relative path is used as command line input for 
   the run.
+  
+Getting beat & pitch data: 
+  Start by downloading and installing the Librosa library (http://librosa.github.io/librosa/index.html)
+  In the beatTrack.py file, change the 'filename' variable to be the path to the audio file you want to use. 
+  Then run, 'python3 beatTrack.py'
+  
+  For pitch you will do the same steps. Change the 'filename' variable and run, 'python3 pitch_extract.py'
+  
+  Beat will output a time series showing the time in seconds of every beat.
+  Pitch will output a series of numbers 0-11. 
+  0 = C, 1 = C#, 2 = D, 3 = D#, etc
+  There is one pitch for every frame in the audio clip.
+  
 
 Run details:
   1. Unzip the zip file of source code.
